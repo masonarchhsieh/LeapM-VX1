@@ -6,14 +6,13 @@ cl  /TP voxieleapTest.c Leap_Voxon.cpp /MT /link user32.lib
 #endif
 
 // command: cl  /TP voxieleapTest.c Leap_Voxon.cpp /MT /link user32.lib
-
 //Voxiebox example for C. Requires voxiebox.dll to be in path.
 //NOTE:voxiebox.dll is compiled as 64-bit mode. Be sure to compile for 64-bit target or else voxie_load() will fail.
 //To compile, type "nmake voxiesimp.c" at a VC command prompt, or set up in environment using hints from makefile above.
-//Code by Ken Silverman
-
+    
 // Edit by Yi-Ting, Hsieh
-// Introduce leap motion SDK4.0 and implement gesture menu system.
+// The code is derived from voxiedemo.c.
+// Introduce leap motion SDK4.0(implement a wrapper API as Leap_Voxon) and implement a new menu system, which is the world's first gesture menu system.
 // Project video: https://www.youtube.com/watch?v=zyG7rsY_ZL8
 // Project website: https://gesturelab.blogspot.com/
 #include "voxiebox.h"
